@@ -3,43 +3,82 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <style>
-        .centered-button
-        {
-            text-align: center;
-        }
-    </style>
   </head>
-  <body>
-    <h1 style="text-align: center; color: blue;">Registration form</h1>
-    <form>
-      <label for="fullName">Full Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-      <input type="text" placeholder="Full Name" id="fullName">
-      <br><br>
-      <label for="userName">Username:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-      <input type="text" placeholder="User Name" id="userName">
-      <br><br>
-      <label for="password">Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-      <input type="password" placeholder="Password" id="password">
-      <br><br>
-      <label for="password">Re Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-      <input type="password" placeholder="Re Password" id="password">
-      <br><br>
-      <label for="address">Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-      <input type="address" placeholder="Address" id="address">
-      <br><br>
-      <label for="age">Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-      <input type="age" placeholder="Age" id="age">
-      <br><br>
-      <label for="gender">Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-      <select name="gender" id="gender">
-        <option>Male</option>
-        <option value="Female">Female</option>
-      </select>
-      <br><br>
-      <div class="centered-button">
-        <button type="button">Register</button>
-      </div>
-    </form>
+  <body style="text-align: center;">
+    <h1 style="color: blue;">Registration form</h1>
+    <div style="display: inline-block; text-align: left;">
+      <table border="1">
+        <tr>
+          <td align="center"><b>First Name</b></td>
+          <td align="center"><input type="text" style="width: 97%; font-size: inherit;"></td>
+        </tr>
+        <tr>
+          <td align="center"><b>Last Name</b></td>
+          <td align="center"><input type="text" style="width: 97%; font-size: inherit;"></td>
+        </tr>
+        <tr>
+          <td align="center"><b>Email</b></td>
+          <td align="center"><input type="text" style="width: 97%; font-size: inherit;"></td>
+        </tr>
+        <tr>
+          <td align="center"><b>Password</b></td>
+          <td align="center"><input type="text" style="width: 97%; font-size: inherit;"></td>
+        </tr>
+        <tr>
+          <td align="center"><b>Re-enter Password</b></td>
+          <td align="center"><input type="text" style="width: 97%; font-size: inherit;"></td>
+        </tr>
+        <tr style="height: 20px;"> 
+          <td align="center"><b>Gender:</b></td>
+          <td align="left">
+            <input type="radio" name="gender" value="male"> Male <hr>
+            <input type="radio" name="gender" value="female"> Female
+          </td>
+        </tr> 
+        <tr>
+          <td align="center"><b>Age:</b></td>
+          <td align="center"><input type="text" style="width: 97%; font-size: inherit;"></td>
+        </tr>
+        <tr>
+          <td align="center"><b>Phone Number</b></td>
+          <td align="center"><input type="text" style="width: 97%; font-size: inherit;"></td>
+        </tr>
+        <tr style="height: 100px;">
+          <td align="center"><b>Address</b></td>
+          <td align="center"><textarea style="width: 97%; height: 100%; font-size: inherit; resize: both;"></textarea></td>
+        </tr>
+        <tr>
+          <td align="center"><b>State</b></td>
+          <td align="center"><input type="text" style="width: 97%; font-size: inherit;"></td>
+        </tr>
+        <tr>
+          <td align="center"><b>Country</b></td>
+          <td align="center">
+            <select style="width: 100%;"> 
+              <option value="state">Choose your country</option>
+              <option value="state1">India</option>
+              <option value="state2">China</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><b>Languages Known</b></td>
+          <td align="left">
+            <input type="checkbox"><label>English</label>
+            <input type="checkbox"><label>Kannada</label>
+            <input type="checkbox"><label>Hindi</label>
+            <input type="checkbox"><label>Telugu</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="checkbox"><label>Hereby I declare all the details are true</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: right;">Log in to<a href="https://www.ethnus.com">Ethnus</a> website</td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
