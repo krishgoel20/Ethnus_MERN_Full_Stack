@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table
+        {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid black;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        th,td
+        {
+            padding: 10px;
+            text-align: left;
+            border: none;
+            background-color: #96D4D4;
+        }
+        th
+        {
+            background-color: #96D4D4;
+        }
+        th span, td span
+        {
+            border: 1px solid black;
+            border-radius: 20px;
+            display: inline-block;
+            padding: 10px;
+        }
+        .shape-container
+        {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 10px;
+            margin-top: 10px;
+        }
+        .shape
+        {
+            width: 100px;
+            height: 100px;
+            background-color: #F2C14E;
+            border: 2px solid black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .rectangle
+        {
+            width: 150px;
+            height: 100px;
+            border: 3px solid rgb(113,232,113);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .rectangle2
+        {
+            width: 150px;
+            height: 100px;
+            border: 3px solid rgb(113,232,113);
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .rectangle3
+        {
+            width: 150px;
+            height: 100px;
+            border: 3px solid rgb(113,232,113);
+            border-radius: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .oval
+        {
+            width: 30%;
+            height: 100px;
+            border: 3px solid rgb(113,232,113);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .custom-shape
+        {
+            width: 150px;
+            height: 100px;
+            border: 3px solid rgb(113,232,113);
+            border-radius: 0 20px 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th><span>Firstname</span></th>
+            <th><span>Lastname</span></th>
+            <th><span>Age</span></th>
+        </tr>
+        <tr>
+            <td><span>Jill</span></td>
+            <td><span>Smith</span></td>
+            <td><span>50</span></td>
+        </tr>
+        <tr>
+            <td><span>Eve</span></td>
+            <td><span>Jackson</span></td>
+            <td><span>94</span></td>
+        </tr>
+        <tr>
+            <td><span>John</span></td>
+            <td><span>Doe</span></td>
+            <td><span>80</span></td>
+        </tr>
+    </table>
+
+    <div class="shape-container">
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle2"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle3"></div>
+        <div class="rectangle2"></div>
+        <div class="oval"></div>
+        <div class="rectangle3"></div>
+        <div class="custom-shape"></div>
+    </div>
+</body>
+</html>
