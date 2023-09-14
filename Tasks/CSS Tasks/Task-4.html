@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container 
+        {
+            border: 1px solid black;
+            margin-left: 20%;
+            margin-right: 40%;
+            display: flex;
+            justify-content: left;
+        }
+
+        .contain 
+        {
+            padding-left: 20px;
+            padding-right: 20px;
+            float: right;
+        }
+
+        .green 
+        {
+            margin-right: 10px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            height: 50px;
+            width: 50px;
+            background-color: green;
+            transition: transform 1s;
+        }
+
+        .blue 
+        {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            transition: transform 1s;
+        }
+
+        .red 
+        {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            height: 50px;
+            width: 50px;
+            transition: transform 1s;
+            background-color: red;
+        }
+
+        .grey 
+        {
+            margin-right: 10px;
+            margin-bottom: 80px;
+            height: 50px;
+            width: 50px;
+            transition: transform 1s;
+            background-color: grey;
+        }
+
+        .green:hover 
+        {
+            transform: scale(1.25);
+        }
+
+        .blue:hover 
+        {
+            transform: scale(1.25);
+        }
+
+        .red:hover 
+        {
+            transform: scale(1.25);
+        }
+
+        .grey:hover 
+        {
+            transform: scale(1.25);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="green"></div>
+            <div class="blue"></div>
+            <div class="red"></div>
+            <div class="grey"></div>
+        </div>
+        <div class="contain">
+            <h2>Hoverable Sidenav Buttons</h2>
+            <p>Hover over buttons in the left side navigation to open them</p>
+        </div>
+    </div>
+</body>
+</html>
