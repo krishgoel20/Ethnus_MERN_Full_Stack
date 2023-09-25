@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        function reverseNumber(number)
+        {
+            let numberStr = number.toString();
+
+            let reversedStr = numberStr.split('').reverse().join('');
+
+            let reversedNumber = parseInt(reversedStr,10);
+
+            return reversedNumber;
+        }
+
+        let userInput = prompt("Enter a number: ");
+        let inputNumber = parseFloat(userInput);
+
+        if (!isNaN(inputNumber))
+        {
+            let reversed = reverseNumber(inputNumber);
+
+            console.log('Original Number: ${inputNumber}');
+            console.log('Reversed Number: ${reversed}');
+        }
+
+        else
+        {
+            console.log("Invalid input. Please enter a valid number.");
+        }
+    </script>
+</body>
+</html>
