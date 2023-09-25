@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <script type="text/javascript">
-        function sortStringAlphabetically(inputString)
-        {
-            return inputString.split('').sort().join('');
-        }
+<html>
+    <head>
+        <title>Examples</title>
+    </head>
+    <body>
+        <div id="result"></div>
+        <script>
+            function alphaOrder(str)
+            {
+                var arr = str.split("");
+                arr.sort();
+                var sortedStr = arr.join("");
+                return sortedStr;
+            }
 
-        let userInput = prompt("Enter a string: ");
+            var userInput = prompt("Enter a string:");
 
-        if (userInput != null)
-        {
-            let sortedString = sortStringAlphabetically(userInput);
-            console.log('Original String: ${userInput}');
-            console.log('Sorted String: ${sortedString}');
-        }
-        
-        else
-        {
-            console.log("Invalid input. Please enter a valid string.");
-        }
-    </script>
-</body>
+            if (userInput !== null) 
+            {
+                var sortedString = alphaOrder(userInput);
+                document.getElementById("result").innerHTML = `Original String: ${userInput}<br>Sorted String: ${sortedString}`;
+            } 
+            else 
+            {
+                document.getElementById("result").innerHTML = "Invalid input. Please enter a valid string.";
+            }
+        </script>
+    </body>
 </html>
