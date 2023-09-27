@@ -1,45 +1,46 @@
-<html>
-<head>
-    <script type="text/javascript">
-        var img = null;
-        var animationInterval;
-        var isMoving = false;
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script type="text/javascript">
+            var img = null;
+            var animationInterval;
+            var isMoving = false;
 
-        function init() 
-        {
-            img = document.getElementById("myimg");
-            img.style.position = "relative";
-            img.style.left = "50px";
-        }
-
-        function moveRight() 
-        {
-            if (!isMoving) 
+            function init() 
             {
-                isMoving = true;
-                animationInterval = setInterval(function() {
-                    img.style.left = parseInt(img.style.left) + 10 + "px";
-                }, 100);
+                img = document.getElementById("myimg");
+                img.style.position = "relative";
+                img.style.left = "50px";
             }
-        }
 
-        function stop() 
-        {
-            clearInterval(animationInterval);
-            isMoving = false;
-        }
+            function moveRight() 
+            {
+                if (!isMoving) 
+                {
+                    isMoving = true;
+                    animationInterval = setInterval(function() {
+                        img.style.left = parseInt(img.style.left) + 10 + "px";
+                    }, 100);
+                }
+            }
 
-        window.onload = init;
-    </script>
-</head>
-<body>
-    <form>
-        <img id="myimg" src="train.png">
-        <center>
-            <p style="color: rgb(58,0,128); font-size: 20px; font-weight: 900;">Click the following buttons to handle animations</p>
-            <input type="button" value="Start" onclick="moveRight()">
-            <input type="button" value="Stop" onclick="stop()">
-        </center>
-    </form>
-</body>
+            function stop() 
+            {
+                clearInterval(animationInterval);
+                isMoving = false;
+            }
+
+            window.onload = init;
+        </script>
+    </head>
+    <body>
+        <form>
+            <img id="myimg" src="train.png">
+            <center>
+                <p style="color: rgb(58,0,128); font-size: 20px; font-weight: 900;">Click the following buttons to handle animations</p>
+                <input type="button" value="Start" onclick="moveRight()">
+                <input type="button" value="Stop" onclick="stop()">
+            </center>
+        </form>
+    </body>
 </html>
