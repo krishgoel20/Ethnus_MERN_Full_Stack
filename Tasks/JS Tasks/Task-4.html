@@ -24,7 +24,7 @@
                     month: 'long',
                     day: 'numeric',
                 };
-                const formattedDate = currentDate.toLocaleDateString('en-UK',options).replace(' ','/');
+                const formattedDate = currentDate.toLocaleDateString('en-UK',options).replace(' ','/').replace(' ','/');
                 document.getElementById('dateResult').textContent = `${formattedDate}`;
             }
 
