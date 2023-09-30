@@ -44,12 +44,14 @@
                 width: 100%;
                 padding: 10px;
                 margin: 10px 0;
+                font-size: 18px;
                 border: 1px solid #ccc;
                 border-radius: 3px;
             }
 
             button 
             {
+                font-size: 18px;
                 background-color: #0095f6;
                 color: #fff;
                 border: none;
@@ -88,7 +90,7 @@
                 if (!isNaN(inputNumber)) 
                 {
                     const reversed = parseFloat(userInput.toString().split('').reverse().join(''));
-                    document.getElementById("result").textContent = `Original Number: ${inputNumber}\nReversed Number: ${reversed}`;
+                    document.getElementById("result").innerHTML = `Original Number: ${inputNumber}<br>Reversed Number: ${reversed}`;
                 } 
                 else 
                 {
