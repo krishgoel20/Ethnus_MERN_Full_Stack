@@ -70,6 +70,11 @@
                 font-size: 20px;
                 margin-top: 20px;
             }
+
+            .error
+            {
+                color: red;
+            }
         </style>
     </head>
     <body>
@@ -87,13 +92,14 @@
                 var arr = userInput.split("");
                 arr.sort();
                 var sortedStr = arr.join("");
-                if (userInput !== null)
+                if (userInput.trim() !== "")
                 {
                     document.getElementById("result").innerHTML = `Original String: ${userInput}<br>Sorted String: ${sortedStr}`;
                 }
                 else 
                 {
-                    document.getElementById("result").textContent = "Invalid input. Please enter a valid string.";
+                    document.getElementById("result").classList.add("error");
+                    document.getElementById("result").textContent = "Invalid input !!! Please enter a valid string.";
                 }
             }
         </script>
